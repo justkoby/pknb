@@ -1,6 +1,13 @@
 import { Link } from 'react-router-dom';
+import useSEO from '../hooks/useSEO';
 
 export default function Insights() {
+  useSEO({
+    title: 'Journal & Industrial Insights',
+    description: 'Read the latest technical insights and operational engineering analyses from PKNB Consult on power factor penalty correction, sub-metering ROI, and hybrid cell-site power.',
+    keywords: 'power factor analysis, sub-metering ROI, telecom hybrid energy, compressed air energy leak, voltage instability GH'
+  });
+
   return (
     <>
       <header className="page-head">

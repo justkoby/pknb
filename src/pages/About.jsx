@@ -1,6 +1,13 @@
 import { Link } from 'react-router-dom';
+import useSEO from '../hooks/useSEO';
 
 export default function About() {
+  useSEO({
+    title: 'About the Practice',
+    description: 'Learn about PKNB Consult, an independent engineering consultancy based in Accra, Ghana. Guided by professional SPE-GHIE and PMP standards to deliver industrial intelligence.',
+    keywords: 'about PKNB, Ing Papa Kusi Nimoh-Brema, Ghana engineers, energy management credential, SPE-GHIE, PMP engineering'
+  });
+
   return (
     <>
       <header className="page-head">

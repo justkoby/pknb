@@ -38,7 +38,7 @@ export default function Footer() {
           <div>
             <h5>Connect</h5>
             <ul>
-              <li><a href="mailto:hello@pknbconsult.com">hello@pknbconsult.com</a></li>
+              <li><a href="mailto:info@pknbconsult.com">info@pknbconsult.com</a></li>
               <li><a href="tel:+233241307209">+233 24 130 7209</a></li>
               <li><a href="#">LinkedIn</a></li>
               <li><a href="https://wa.me/233241307209" target="_blank" rel="noreferrer">WhatsApp</a></li>

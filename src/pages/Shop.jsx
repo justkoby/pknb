@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import useSEO from '../hooks/useSEO';
 
 // Product Database covering all 15 B2B Industrial Categories
 const PRODUCTS = [
@@ -567,6 +568,12 @@ function ProductImage({ src, alt, category, className = 'modal-image' }) {
 }
 
 export default function Shop() {
+  useSEO({
+    title: 'B2B Equipment Catalog & Solar Packages',
+    description: 'Procure high-efficiency hybrid solar packages, backup diesel generators, industrial Bosch power tools, safety PPE, and mechanical consumables from PKNB Consult.',
+    keywords: 'B2B procurement, hybrid solar packages, Bosch power tools Ghana, industrial generators, safety wear PPE, solar calculator backup'
+  });
+
   const [activeTab, setActiveTab] = useState('ALL');
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedProduct, setSelectedProduct] = useState(null);
@@ -644,7 +651,7 @@ export default function Shop() {
   const getEmailLink = (product) => {
     const subject = `Inquiry: ${product.name}`;
     const body = `Hello PKNB Consult Team,\n\nI am writing to inquire about the "${product.name}" featured on your store page.\n\nProduct Details:\n- Category: ${product.category}\n- Specs: ${product.specs}\n- Price: ${product.price}\n\nKindly provide more details regarding B2B discount margins, stock availability, and nationwide shipping options to our facility.\n\nThank you.`;
-    return `mailto:hello@pknbconsult.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    return `mailto:info@pknbconsult.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   };
 
   return (

@@ -1,6 +1,13 @@
 import { Link } from 'react-router-dom';
+import useSEO from '../hooks/useSEO';
 
 export default function Projects() {
+  useSEO({
+    title: 'Selected Engineering Projects & Case Studies',
+    description: 'Explore the project cases of PKNB Consult demonstrating verified operational impact: industrial sub-metering cost recovery, grid-tied institutional solar PV, and power factor penalty remediation.',
+    keywords: 'engineering case studies, industrial utility cost recovery, 500kW solar PV Ghana, capacitor bank install, power factor correction projects'
+  });
+
   return (
     <>
       <header className="page-head">

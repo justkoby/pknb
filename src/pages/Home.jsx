@@ -1,7 +1,14 @@
 import { Link } from 'react-router-dom';
 import Counter from '../components/Counter';
+import useSEO from '../hooks/useSEO';
 
 export default function Home() {
+  useSEO({
+    title: 'Industrial Intelligence & Sustainable Performance',
+    description: 'PKNB Consult is a premium engineering and energy consultancy based in Accra, Ghana. We specialize in off-grid solar packages, energy accountability audits, operational efficiency, and MEP engineering across Africa.',
+    keywords: 'engineering consultancy, energy consultancy, energy audits, off-grid solar, industrial backup, solar calculator, MEP engineering, Accra, Ghana, Africa, PKNB Consult'
+  });
+
   return (
     <>
       <header className="hero">

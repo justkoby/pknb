@@ -1,6 +1,13 @@
 import { Link } from 'react-router-dom';
+import useSEO from '../hooks/useSEO';
 
 export default function Services() {
+  useSEO({
+    title: 'Consulting Services & Engineering Practices',
+    description: 'Explore the six core engineering practices of PKNB Consult: Industrial Intelligence, Energy Accountability, Operational Efficiency, MEP Design, EPC Solutions, and Workforce Development.',
+    keywords: 'MEP engineering, EPC solutions, solar PV design, power systems analysis, industrial utility audits, workforce training Ghana'
+  });
+
   return (
     <>
       <header className="page-head">

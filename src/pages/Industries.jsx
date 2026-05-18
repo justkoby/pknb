@@ -1,6 +1,13 @@
 import { Link } from 'react-router-dom';
+import useSEO from '../hooks/useSEO';
 
 export default function Industries() {
+  useSEO({
+    title: 'Industries We Serve',
+    description: 'PKNB Consult serves industries that require reliable operations and cost control: manufacturing, agro-processing, commercial facilities, hospitals, hotels, telecom, and public sectors.',
+    keywords: 'manufacturing energy audit, agro-processing steam optimization, commercial building sub-metering, telecom hybrid power, hospital critical backup'
+  });
+
   return (
     <>
       <header className="page-head">
