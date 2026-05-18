@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Layout from './components/Layout';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -6,8 +6,7 @@ import Services from './pages/Services';
 import Industries from './pages/Industries';
 import Projects from './pages/Projects';
 import Insights from './pages/Insights';
-import Contact from './pages/Contact';
-import EquipmentStore from './pages/EquipmentStore';
+import Shop from './pages/Shop';
 
 // Services
 import IndustrialIntelligence from './pages/services/IndustrialIntelligence';
@@ -36,8 +35,8 @@ function App() {
           <Route path="industries" element={<Industries />} />
           <Route path="projects" element={<Projects />} />
           <Route path="insights" element={<Insights />} />
-          <Route path="equipment" element={<EquipmentStore />} />
-          <Route path="contact" element={<Contact />} />
+          <Route path="shop" element={<Shop />} />
+          <Route path="contact" element={<Navigate to="/shop" replace />} />
           
           {/* Services routes */}
           <Route path="services/industrial-intelligence" element={<IndustrialIntelligence />} />

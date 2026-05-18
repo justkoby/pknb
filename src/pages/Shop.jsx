@@ -253,7 +253,7 @@ const PRODUCTS = [
   }
 ];
 
-export default function EquipmentStore() {
+export default function Shop() {
   const [activeTab, setActiveTab] = useState('ALL');
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedProduct, setSelectedProduct] = useState(null);

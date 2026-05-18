@@ -36,8 +36,7 @@ export default function Nav() {
           <Link to="/industries" className={isActive('/industries')} onClick={() => setIsOpen(false)}>Industries</Link>
           <Link to="/projects" className={isActive('/projects')} onClick={() => setIsOpen(false)}>Projects</Link>
           <Link to="/insights" className={isActive('/insights')} onClick={() => setIsOpen(false)}>Insights</Link>
-          <Link to="/equipment" className={isActive('/equipment')} onClick={() => setIsOpen(false)}>Equipment</Link>
-          <Link to="/contact" className={isActive('/contact')} onClick={() => setIsOpen(false)}>Contact</Link>
+          <Link to="/shop" className={isActive('/shop')} onClick={() => setIsOpen(false)}>Shop</Link>
         </div>
         <div style={{ display: 'flex', alignItems: 'center' }}>
           <button className="theme-toggle" onClick={toggleTheme} aria-label="Toggle theme" style={{ marginRight: '1rem' }}>
@@ -47,7 +46,7 @@ export default function Nav() {
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ width: '18px', height: '18px' }}><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" /></svg>
             )}
           </button>
-          <Link to="/contact" className="nav__cta">Book an Assessment</Link>
+          <Link to="/shop" className="nav__cta">Book an Assessment</Link>
         </div>
         <button className="nav__toggle" aria-label="Menu" onClick={toggleMenu}>
           {isOpen ? 'CLOSE' : 'MENU'}
