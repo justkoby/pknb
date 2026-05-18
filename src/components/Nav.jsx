@@ -36,6 +36,7 @@ export default function Nav() {
           <Link to="/industries" className={isActive('/industries')} onClick={() => setIsOpen(false)}>Industries</Link>
           <Link to="/projects" className={isActive('/projects')} onClick={() => setIsOpen(false)}>Projects</Link>
           <Link to="/insights" className={isActive('/insights')} onClick={() => setIsOpen(false)}>Insights</Link>
+          <Link to="/equipment" className={isActive('/equipment')} onClick={() => setIsOpen(false)}>Equipment</Link>
           <Link to="/contact" className={isActive('/contact')} onClick={() => setIsOpen(false)}>Contact</Link>
         </div>
         <div style={{ display: 'flex', alignItems: 'center' }}>

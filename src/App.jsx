@@ -7,6 +7,7 @@ import Industries from './pages/Industries';
 import Projects from './pages/Projects';
 import Insights from './pages/Insights';
 import Contact from './pages/Contact';
+import EquipmentStore from './pages/EquipmentStore';
 
 // Services
 import IndustrialIntelligence from './pages/services/IndustrialIntelligence';
@@ -35,6 +36,7 @@ function App() {
           <Route path="industries" element={<Industries />} />
           <Route path="projects" element={<Projects />} />
           <Route path="insights" element={<Insights />} />
+          <Route path="equipment" element={<EquipmentStore />} />
           <Route path="contact" element={<Contact />} />
           
           {/* Services routes */}
